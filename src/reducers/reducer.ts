@@ -16,7 +16,6 @@ interface CyclesState {
 }
 
 export function cyclesReducer(state: CyclesState, action: any) {
-  console.log(action)
   switch (action.type) {
     case ActionTypes.add_new_cycle:
       return produce(state, (draft) => {
